@@ -1,0 +1,25 @@
+.responsive-table {
+  width: 50%;
+  border-collapse: collapse;
+}
+
+.responsive-table th,
+.responsive-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+/* for small screen */
+@media screen and (max-width: 820px) {
+  .responsive-table {
+    width: 100%;
+    overflow-x: scroll;
+  }
+
+  .responsive-table th,
+  .responsive-table td {
+    font-size: 10px;
+    padding: 2px;
+  }
+}
